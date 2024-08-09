@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "71b5abcbd6dc22c972f5d952fbb96da2",
+        "name": "154e5ff5a31c.jpg",
+        "path": "file:F:/ArTaxOr/Hymenoptera/154e5ff5a31c.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1421
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "B0GkujyFs",
+            "type": "RECTANGLE",
+            "tags": [
+                "Hymenoptera"
+            ],
+            "boundingBox": {
+                "height": 1138.7755710029792,
+                "width": 2035.2970365265335,
+                "left": 0,
+                "top": 55.58498324230388
+            },
+            "points": [
+                {
+                    "x": 0,
+                    "y": 55.58498324230388
+                },
+                {
+                    "x": 2035.2970365265335,
+                    "y": 55.58498324230388
+                },
+                {
+                    "x": 2035.2970365265335,
+                    "y": 1194.360554245283
+                },
+                {
+                    "x": 0,
+                    "y": 1194.360554245283
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

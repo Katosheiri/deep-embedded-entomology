@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "a25ba7e15b669e72d4bbeda63ce531fc",
+        "name": "edeaf43cede8.jpg",
+        "path": "file:F:/ArTaxOr/Hymenoptera/edeaf43cede8.jpg",
+        "size": {
+            "width": 1199,
+            "height": 1199
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "ESJrOkSh6",
+            "type": "RECTANGLE",
+            "tags": [
+                "Hymenoptera"
+            ],
+            "boundingBox": {
+                "height": 960.1187739463602,
+                "width": 1014.0967432950192,
+                "left": 84.41235632183908,
+                "top": 230.84195402298852
+            },
+            "points": [
+                {
+                    "x": 84.41235632183908,
+                    "y": 230.84195402298852
+                },
+                {
+                    "x": 1098.5090996168583,
+                    "y": 230.84195402298852
+                },
+                {
+                    "x": 1098.5090996168583,
+                    "y": 1190.9607279693487
+                },
+                {
+                    "x": 84.41235632183908,
+                    "y": 1190.9607279693487
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

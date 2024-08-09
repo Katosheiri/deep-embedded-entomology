@@ -1,0 +1,49 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "c19506873aa271202d04fa4dd9f6906b",
+        "name": "3a45372c4c6a.jpg",
+        "path": "file:F:/ArTaxOr/Diptera/3a45372c4c6a.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1976
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "ryeVcFIUm",
+            "type": "RECTANGLE",
+            "tags": [
+                "Diptera",
+                "_truncated"
+            ],
+            "boundingBox": {
+                "height": 1771.5862068965516,
+                "width": 1835.120147874307,
+                "left": 0,
+                "top": 73.81609195402301
+            },
+            "points": [
+                {
+                    "x": 0,
+                    "y": 73.81609195402301
+                },
+                {
+                    "x": 1835.120147874307,
+                    "y": 73.81609195402301
+                },
+                {
+                    "x": 1835.120147874307,
+                    "y": 1845.4022988505747
+                },
+                {
+                    "x": 0,
+                    "y": 1845.4022988505747
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

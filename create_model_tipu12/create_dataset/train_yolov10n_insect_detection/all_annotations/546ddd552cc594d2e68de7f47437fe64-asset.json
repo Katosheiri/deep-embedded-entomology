@@ -1,0 +1,49 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "546ddd552cc594d2e68de7f47437fe64",
+        "name": "3f1154d8453c.jpg",
+        "path": "file:F:/ArTaxOr/Hemiptera/3f1154d8453c.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1536
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "Bb-0yRvG4",
+            "type": "RECTANGLE",
+            "tags": [
+                "Hemiptera",
+                "_truncated"
+            ],
+            "boundingBox": {
+                "height": 1527.1724137931035,
+                "width": 1728.735632183908,
+                "left": 319.264367816092,
+                "top": 8.827586206896552
+            },
+            "points": [
+                {
+                    "x": 319.264367816092,
+                    "y": 8.827586206896552
+                },
+                {
+                    "x": 2048,
+                    "y": 8.827586206896552
+                },
+                {
+                    "x": 2048,
+                    "y": 1536
+                },
+                {
+                    "x": 319.264367816092,
+                    "y": 1536
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

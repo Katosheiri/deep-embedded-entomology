@@ -1,0 +1,49 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "ea0921a8c05df4eac70b48041a7a5d6a",
+        "name": "aaceae2d0542.jpg",
+        "path": "file:F:/ArTaxOr/Araneae/aaceae2d0542.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1365
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "wV8IsN0rG",
+            "type": "RECTANGLE",
+            "tags": [
+                "Araneae",
+                "_truncated"
+            ],
+            "boundingBox": {
+                "height": 1132.951766304348,
+                "width": 2045.175172413793,
+                "left": 2.8248275862068963,
+                "top": 232.0482336956522
+            },
+            "points": [
+                {
+                    "x": 2.8248275862068963,
+                    "y": 232.0482336956522
+                },
+                {
+                    "x": 2047.9999999999998,
+                    "y": 232.0482336956522
+                },
+                {
+                    "x": 2047.9999999999998,
+                    "y": 1365
+                },
+                {
+                    "x": 2.8248275862068963,
+                    "y": 1365
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

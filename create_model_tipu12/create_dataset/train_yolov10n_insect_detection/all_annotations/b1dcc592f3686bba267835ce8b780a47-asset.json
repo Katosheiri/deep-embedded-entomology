@@ -1,0 +1,49 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "b1dcc592f3686bba267835ce8b780a47",
+        "name": "ebd6ac248f9f.jpg",
+        "path": "file:F:/ArTaxOr/Lepidoptera/ebd6ac248f9f.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1536
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "Z2SAYAVVU",
+            "type": "RECTANGLE",
+            "tags": [
+                "Lepidoptera",
+                "_blurred"
+            ],
+            "boundingBox": {
+                "height": 356.04597701149424,
+                "width": 634.1149425287356,
+                "left": 806.9885057471264,
+                "top": 547.3103448275862
+            },
+            "points": [
+                {
+                    "x": 806.9885057471264,
+                    "y": 547.3103448275862
+                },
+                {
+                    "x": 1441.103448275862,
+                    "y": 547.3103448275862
+                },
+                {
+                    "x": 1441.103448275862,
+                    "y": 903.3563218390805
+                },
+                {
+                    "x": 806.9885057471264,
+                    "y": 903.3563218390805
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

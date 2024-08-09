@@ -1,0 +1,49 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "06be07f97af60eccba1ba485e44ef204",
+        "name": "c50cace2d5d0.jpg",
+        "path": "file:F:/ArTaxOr/Odonata/c50cace2d5d0.jpg",
+        "size": {
+            "width": 2048,
+            "height": 2000
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "n-lEtZbuU",
+            "type": "RECTANGLE",
+            "tags": [
+                "Odonata",
+                "_truncated"
+            ],
+            "boundingBox": {
+                "height": 1934.5794392523364,
+                "width": 1955.4555133079846,
+                "left": 92.5444866920152,
+                "top": 0
+            },
+            "points": [
+                {
+                    "x": 92.5444866920152,
+                    "y": 0
+                },
+                {
+                    "x": 2047.9999999999998,
+                    "y": 0
+                },
+                {
+                    "x": 2047.9999999999998,
+                    "y": 1934.5794392523364
+                },
+                {
+                    "x": 92.5444866920152,
+                    "y": 1934.5794392523364
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

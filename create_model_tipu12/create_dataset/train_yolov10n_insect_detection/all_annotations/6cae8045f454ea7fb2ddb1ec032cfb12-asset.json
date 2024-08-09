@@ -1,0 +1,49 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "6cae8045f454ea7fb2ddb1ec032cfb12",
+        "name": "acabec699520.jpg",
+        "path": "file:F:/ArTaxOr/Hymenoptera/acabec699520.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1548
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "Vz8ZGJuS9",
+            "type": "RECTANGLE",
+            "tags": [
+                "Hymenoptera",
+                "_occluded"
+            ],
+            "boundingBox": {
+                "height": 1266.2758620689656,
+                "width": 1193.8015930485155,
+                "left": 403.5336712527154,
+                "top": 182.3793103448276
+            },
+            "points": [
+                {
+                    "x": 403.5336712527154,
+                    "y": 182.3793103448276
+                },
+                {
+                    "x": 1597.3352643012308,
+                    "y": 182.3793103448276
+                },
+                {
+                    "x": 1597.3352643012308,
+                    "y": 1448.6551724137933
+                },
+                {
+                    "x": 403.5336712527154,
+                    "y": 1448.6551724137933
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

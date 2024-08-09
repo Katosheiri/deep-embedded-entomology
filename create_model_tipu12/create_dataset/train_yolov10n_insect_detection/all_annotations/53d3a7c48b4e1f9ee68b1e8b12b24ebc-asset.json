@@ -1,0 +1,49 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "53d3a7c48b4e1f9ee68b1e8b12b24ebc",
+        "name": "4b14f2b073eb.jpg",
+        "path": "file:F:/ArTaxOr/Odonata/4b14f2b073eb.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1239
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "Jo6yHwtYp",
+            "type": "RECTANGLE",
+            "tags": [
+                "Odonata",
+                "_truncated"
+            ],
+            "boundingBox": {
+                "height": 1190.2033475079113,
+                "width": 1822.622009569378,
+                "left": 130.32727272727274,
+                "top": 0
+            },
+            "points": [
+                {
+                    "x": 130.32727272727274,
+                    "y": 0
+                },
+                {
+                    "x": 1952.9492822966508,
+                    "y": 0
+                },
+                {
+                    "x": 1952.9492822966508,
+                    "y": 1190.2033475079113
+                },
+                {
+                    "x": 130.32727272727274,
+                    "y": 1190.2033475079113
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

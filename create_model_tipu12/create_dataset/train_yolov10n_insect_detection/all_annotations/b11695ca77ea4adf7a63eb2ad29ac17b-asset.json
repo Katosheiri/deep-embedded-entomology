@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "b11695ca77ea4adf7a63eb2ad29ac17b",
+        "name": "61c86bad9fa7.jpg",
+        "path": "file:F:/ArTaxOr/Hemiptera/61c86bad9fa7.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1243
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "WAHITKLGn",
+            "type": "RECTANGLE",
+            "tags": [
+                "Hemiptera"
+            ],
+            "boundingBox": {
+                "height": 723.2,
+                "width": 738.6924137931034,
+                "left": 765.5282758620689,
+                "top": 267.006640625
+            },
+            "points": [
+                {
+                    "x": 765.5282758620689,
+                    "y": 267.006640625
+                },
+                {
+                    "x": 1504.2206896551722,
+                    "y": 267.006640625
+                },
+                {
+                    "x": 1504.2206896551722,
+                    "y": 990.2066406250001
+                },
+                {
+                    "x": 765.5282758620689,
+                    "y": 990.2066406250001
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

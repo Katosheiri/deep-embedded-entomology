@@ -1,0 +1,12 @@
+Coleoptera
+Diptera
+Hemiptera
+Hymenoptera
+Lepidoptera
+Mantodea
+Megaloptera
+Neuroptera
+Odonata
+Orthoptera
+Phasmida
+Trichoptera

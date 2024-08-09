@@ -1,0 +1,8 @@
+{
+    "lib": "libvart-dpu-runner.so",
+    "filename": "ultra96v2_ResNet_int.xmodel.xmodel",
+    "kernel": [
+        "subgraph_ResNet__ResNet_Conv2d_conv1__ret_3"
+    ],
+    "target": "DPUCZDX8G_ISA1_B1600_0101000016010404"
+}

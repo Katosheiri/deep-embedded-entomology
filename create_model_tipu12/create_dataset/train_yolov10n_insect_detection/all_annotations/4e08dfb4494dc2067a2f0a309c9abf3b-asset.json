@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "4e08dfb4494dc2067a2f0a309c9abf3b",
+        "name": "6aca7d13ffae.jpg",
+        "path": "file:F:/ArTaxOr/Araneae/6aca7d13ffae.jpg",
+        "size": {
+            "width": 1280,
+            "height": 960
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "41pKsZeQG",
+            "type": "RECTANGLE",
+            "tags": [
+                "Araneae"
+            ],
+            "boundingBox": {
+                "height": 870.8045977011494,
+                "width": 764.1379310344828,
+                "left": 269.88505747126436,
+                "top": 0
+            },
+            "points": [
+                {
+                    "x": 269.88505747126436,
+                    "y": 0
+                },
+                {
+                    "x": 1034.0229885057472,
+                    "y": 0
+                },
+                {
+                    "x": 1034.0229885057472,
+                    "y": 870.8045977011494
+                },
+                {
+                    "x": 269.88505747126436,
+                    "y": 870.8045977011494
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

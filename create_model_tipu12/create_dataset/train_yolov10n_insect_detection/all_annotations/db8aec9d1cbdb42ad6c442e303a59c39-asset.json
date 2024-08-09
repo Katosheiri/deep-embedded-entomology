@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "db8aec9d1cbdb42ad6c442e303a59c39",
+        "name": "8e580821ca1a.jpg",
+        "path": "file:F:/ArTaxOr/Lepidoptera/8e580821ca1a.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1752
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "bD4tatzIC",
+            "type": "RECTANGLE",
+            "tags": [
+                "Lepidoptera"
+            ],
+            "boundingBox": {
+                "height": 486.66666666666663,
+                "width": 387.7770491803279,
+                "left": 692.8,
+                "top": 464.85057471264366
+            },
+            "points": [
+                {
+                    "x": 692.8,
+                    "y": 464.85057471264366
+                },
+                {
+                    "x": 1080.5770491803278,
+                    "y": 464.85057471264366
+                },
+                {
+                    "x": 1080.5770491803278,
+                    "y": 951.5172413793103
+                },
+                {
+                    "x": 692.8,
+                    "y": 951.5172413793103
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

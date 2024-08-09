@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "f4cde3663b8d48dbd9da38e74548588d",
+        "name": "fadd41ecad24.jpg",
+        "path": "file:F:/ArTaxOr/Hymenoptera/fadd41ecad24.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1365
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "CLOJtP92p",
+            "type": "RECTANGLE",
+            "tags": [
+                "Hymenoptera"
+            ],
+            "boundingBox": {
+                "height": 406.53567735263704,
+                "width": 431.90075809786356,
+                "left": 972.4824259131633,
+                "top": 463.792980868666
+            },
+            "points": [
+                {
+                    "x": 972.4824259131633,
+                    "y": 463.792980868666
+                },
+                {
+                    "x": 1404.383184011027,
+                    "y": 463.792980868666
+                },
+                {
+                    "x": 1404.383184011027,
+                    "y": 870.328658221303
+                },
+                {
+                    "x": 972.4824259131633,
+                    "y": 870.328658221303
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

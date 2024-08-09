@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "2f0fb00f42e4d4e79be651baab26c6a3",
+        "name": "d34faefe66bc.jpg",
+        "path": "file:F:/ArTaxOr/Coleoptera/d34faefe66bc.jpg",
+        "size": {
+            "width": 2048,
+            "height": 1536
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "kO0xRNjWF",
+            "type": "RECTANGLE",
+            "tags": [
+                "Coleoptera"
+            ],
+            "boundingBox": {
+                "height": 672.3678160919541,
+                "width": 491.4022988505747,
+                "left": 623.0804597701149,
+                "top": 622.3448275862069
+            },
+            "points": [
+                {
+                    "x": 623.0804597701149,
+                    "y": 622.3448275862069
+                },
+                {
+                    "x": 1114.4827586206895,
+                    "y": 622.3448275862069
+                },
+                {
+                    "x": 1114.4827586206895,
+                    "y": 1294.712643678161
+                },
+                {
+                    "x": 623.0804597701149,
+                    "y": 1294.712643678161
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}
