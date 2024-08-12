@@ -1,0 +1,187 @@
+INT8 ALL PREPROCEESSING
+
+Class  Coleoptera [54.74%] : ###########################                      |
+Class     Diptera [57.19%] : ############################                     |
+Class   Hemiptera [58.63%] : #############################                    |
+Class Hymenoptera [67.13%] : #################################                |
+Class Lepidoptera [72.66%] : ####################################             |
+Class    Mantodea [81.65%] : ########################################         |
+Class Megaloptera [88.19%] : ############################################     |
+Class  Neuroptera [53.18%] : ##########################                       |
+Class     Odonata [73.82%] : ####################################             |
+Class  Orthoptera [64.02%] : ################################                 |
+Class    Phasmida [49.56%] : ########################                         |
+Class Trichoptera [65.38%] : ################################                 |
+Global accuracy: 65.50%
+
+INT8 OLD MAIN
+
+Class  Coleoptera [  nan%] :                                                  |
+Class     Diptera [  nan%] :                                                  |
+Class   Hemiptera [58.99%] : #############################                    |
+Class Hymenoptera [  nan%] :                                                  |
+Class Lepidoptera [  nan%] :                                                  |
+Class    Mantodea [  nan%] :                                                  |
+Class Megaloptera [85.98%] : ##########################################       |
+Class  Neuroptera [  nan%] :                                                  |
+Class     Odonata [  nan%] :                                                  |
+Class  Orthoptera [  nan%] :                                                  |
+Class    Phasmida [  nan%] :                                                  |
+Class Trichoptera [  nan%] :                                                  |
+Global accuracy: 72.31%
+
+INT8 ALL PREPROCEESSING CORRECT MEAN 4 THREADS
+
+DPU execution time: 137.391 seconds
+DPU FPS: 23.5241
+Class  Coleoptera [62.41%] : ###############################                  |
+Class     Diptera [61.75%] : ##############################                   |
+Class   Hemiptera [64.03%] : ################################                 |
+Class Hymenoptera [65.74%] : ################################                 |
+Class Lepidoptera [71.22%] : ###################################              |
+Class    Mantodea [77.98%] : ######################################           |
+Class Megaloptera [89.30%] : ############################################     |
+Class  Neuroptera [50.94%] : #########################                        |
+Class     Odonata [76.36%] : ######################################           |
+Class  Orthoptera [66.95%] : #################################                |
+Class    Phasmida [61.84%] : ##############################                   |
+Class Trichoptera [70.38%] : ###################################              |
+Global accuracy: 68.10%
+
+INT8 ALL PREPROCEESSING WITHOUT MEAN 4 THREADS
+
+DPU execution time: 136.523 seconds (2.27538 minutes)
+DPU FPS: 23.6737
+Class  Coleoptera [61.31%] : ##############################                   |
+Class     Diptera [64.21%] : ################################                 |
+Class   Hemiptera [54.68%] : ###########################                      |
+Class Hymenoptera [65.74%] : ################################                 |
+Class Lepidoptera [72.66%] : ####################################             |
+Class    Mantodea [79.82%] : #######################################          |
+Class Megaloptera [84.87%] : ##########################################       |
+Class  Neuroptera [56.18%] : ############################                     |
+Class     Odonata [78.18%] : #######################################          |
+Class  Orthoptera [69.46%] : ##################################               |
+Class    Phasmida [52.19%] : ##########################                       |
+Class Trichoptera [69.23%] : ##################################               |
+Global accuracy: 67.30%
+
+INT8 ALL PREPROCEESSING MEAN AND STD 4 THREADS
+
+DPU execution time: 136.327 seconds (2.27212 minutes)
+DPU FPS (1 threads): 23.7077
+Class  Coleoptera [65.33%] : ################################                 |
+Class     Diptera [64.91%] : ################################                 |
+Class   Hemiptera [70.86%] : ###################################              |
+Class Hymenoptera [61.00%] : ##############################                   |
+Class Lepidoptera [75.18%] : #####################################            |
+Class    Mantodea [60.55%] : ##############################                   |
+Class Megaloptera [85.24%] : ##########################################       |
+Class  Neuroptera [51.31%] : #########################                        |
+Class     Odonata [79.27%] : #######################################          |
+Class  Orthoptera [61.51%] : ##############################                   |
+Class    Phasmida [64.04%] : ################################                 |
+Class Trichoptera [68.08%] : ##################################               |
+Global accuracy: 67.36%
+
+INT8 ALL PREPROCEESSING MEAN AND STD 4 THREADS WITHOUT CENTRALIZATION
+
+DPU execution time: 134.927 seconds (2.24878 minutes)
+DPU FPS (1 threads): 23.9537
+Class  Coleoptera [68.61%] : ##################################               |
+Class     Diptera [70.18%] : ###################################              |
+Class   Hemiptera [67.99%] : #################################                |
+Class Hymenoptera [66.30%] : #################################                |
+Class Lepidoptera [75.54%] : #####################################            |
+Class    Mantodea [70.18%] : ###################################              |
+Class Megaloptera [89.67%] : ############################################     |
+Class  Neuroptera [53.93%] : ##########################                       |
+Class     Odonata [83.64%] : #########################################        |
+Class  Orthoptera [74.06%] : #####################################            |
+Class    Phasmida [66.67%] : #################################                |
+Class Trichoptera [73.08%] : ####################################             |
+Global accuracy: 71.60%
+
+
+
+
+
+Programm execution time: 155.50 seconds (2.59 minutes)
+Load + preprocess + DPU FPS (1 threads): 20.78
+DPU execution time: 119.02 seconds (1.98 minutes)
+DPU FPS (1 threads): 27.16
+Class  Coleoptera [68.61%] : ##################################               |
+Class     Diptera [70.18%] : ###################################              |
+Class   Hemiptera [67.99%] : #################################                |
+Class Hymenoptera [66.30%] : #################################                |
+Class Lepidoptera [75.54%] : #####################################            |
+Class    Mantodea [70.18%] : ###################################              |
+Class Megaloptera [89.67%] : ############################################     |
+Class  Neuroptera [53.93%] : ##########################                       |
+Class     Odonata [83.64%] : #########################################        |
+Class  Orthoptera [74.06%] : #####################################            |
+Class    Phasmida [66.67%] : #################################                |
+Class Trichoptera [73.08%] : ####################################             |
+Global accuracy: 71.60%
+
+
+Programm execution time: 154.65 seconds (2.58 minutes)
+Load + preprocess + DPU FPS (2 threads): 20.90
+DPU execution time: 118.12 seconds (1.97 minutes)
+DPU FPS (2 threads): 27.36
+Class  Coleoptera [68.61%] : ##################################               |
+Class     Diptera [70.18%] : ###################################              |
+Class   Hemiptera [67.99%] : #################################                |
+Class Hymenoptera [66.30%] : #################################                |
+Class Lepidoptera [75.54%] : #####################################            |
+Class    Mantodea [70.18%] : ###################################              |
+Class Megaloptera [89.67%] : ############################################     |
+Class  Neuroptera [53.93%] : ##########################                       |
+Class     Odonata [83.64%] : #########################################        |
+Class  Orthoptera [74.06%] : #####################################            |
+Class    Phasmida [66.67%] : #################################                |
+Class Trichoptera [73.08%] : ####################################             |
+Global accuracy: 71.60%
+
+
+Programm execution time: 154.69 seconds (2.58 minutes)
+Load + preprocess + DPU FPS (3 threads): 20.89
+DPU execution time: 118.15 seconds (1.97 minutes)
+DPU FPS (3 threads): 27.36
+Class  Coleoptera [68.61%] : ##################################               |
+Class     Diptera [70.18%] : ###################################              |
+Class   Hemiptera [67.99%] : #################################                |
+Class Hymenoptera [66.30%] : #################################                |
+Class Lepidoptera [75.54%] : #####################################            |
+Class    Mantodea [70.18%] : ###################################              |
+Class Megaloptera [89.67%] : ############################################     |
+Class  Neuroptera [53.93%] : ##########################                       |
+Class     Odonata [83.64%] : #########################################        |
+Class  Orthoptera [74.06%] : #####################################            |
+Class    Phasmida [66.67%] : #################################                |
+Class Trichoptera [73.08%] : ####################################             |
+Global accuracy: 71.60%
+End of program
+
+
+
+
+
+Programm execution time: 155.23 seconds (2.59 minutes)
+Load + preprocess + DPU FPS (4 threads): 20.82
+DPU execution time: 118.17 seconds (1.97 minutes)
+DPU FPS (4 threads): 27.35
+Class  Coleoptera [68.61%] : ##################################               |
+Class     Diptera [70.18%] : ###################################              |
+Class   Hemiptera [67.99%] : #################################                |
+Class Hymenoptera [66.30%] : #################################                |
+Class Lepidoptera [75.54%] : #####################################            |
+Class    Mantodea [70.18%] : ###################################              |
+Class Megaloptera [89.67%] : ############################################     |
+Class  Neuroptera [53.93%] : ##########################                       |
+Class     Odonata [83.64%] : #########################################        |
+Class  Orthoptera [74.06%] : #####################################            |
+Class    Phasmida [66.67%] : #################################                |
+Class Trichoptera [73.08%] : ####################################             |
+Global accuracy: 71.60%
+
