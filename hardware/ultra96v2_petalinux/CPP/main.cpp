@@ -46,7 +46,7 @@ static const char* lookup(int index) {
 
 void load_images_from_folder(const string& folder_path, int max_images, uint8_t* images, uint8_t* labels) {
     int n_images = 0;   
-    // Iterate through the table lookup table of the class
+    // Iterate through the lookup table of the class
     for (int i = 0; i < N_CLASSES; i++) {
         if (n_images >= max_images) {
             break;
@@ -118,14 +118,14 @@ void displayResult(int8_t* result, int n_classes) {
 
 void printAccuracyBars(const vector<float>& accuracies) {
     const char barChar = '#';
-    const int maxBarLength = 50; // Longueur maximale de la barre
+    const int maxBarLength = 50;
 
     for (size_t i = 0; i < accuracies.size(); ++i) {
-        // Calculer la longueur de la barre proportionnellement à la précision
+        // Bar is proportionate to accuracy
         int barLength = static_cast<int>(accuracies[i] * maxBarLength);
         int limit = maxBarLength - barLength - 1;
 
-        // Afficher la barre
+        // Show bar
         cout << "Class " << setw(11) << lookup(i) << " [" << setw(5) << fixed << setprecision(2) << accuracies[i] * 100 << "%] : ";
         cout << string(barLength, barChar) << string(limit, ' ') << "|" << endl;
               
@@ -138,12 +138,9 @@ void printAccuracy(dpu_type* outputBuffer, uint8_t* labels, int n_images, float 
     vector<float> output, probs;
     for (int i = 0; i < n_images; i++) {
         output = int8ToFloat(outputBuffer + i * N_CLASSES, N_CLASSES, scale);
-        // output = vector<float>(outputBuffer + i * N_CLASSES, outputBuffer + (i + 1) * N_CLASSES);
         probs = softmax(output);
         auto max_it = max_element(probs.begin(), probs.end());
         auto max_index = distance(probs.begin(), max_it);
-        // cout << "Predicted class: " << lookup(max_index) << " with probability: " << *max_it << endl;
-        // cout << "Actual class:    " << lookup(labels[i]) << endl;
 
         if (max_index == labels[i]) {
             int class_index = labels[i];
@@ -257,12 +254,6 @@ int main(int argc, char* argv[]) {
         cout << "class_folder " << class_folder << endl;
     }
     cout << "Found " << n_images << " images in subfolders" << endl;
-    // if (n_images > max_images) {
-    //     n_images = max_images;
-    //     cout << "Limiting number of images to " << n_images << endl;
-    // }
-
-    // n_images = 2200;
 
     // Allocate memory for the images and labels
     uint8_t* images = new uint8_t[n_images * IMAGE_TOTAL_PIXELS];
