@@ -1,8 +1,5 @@
 # Kria KV260 - Pynq DPU
 
-On this board we used [Pynq DPU]() to run our model.
-
-
 
 ## Setup the board
 
@@ -68,3 +65,8 @@ Also copy your ```xmodel``` to use your AI application.
 
 
 The code was developped to work in multithreading. It will show and save a few metrics : accuracy per class, speed, confusion matrix, f1-score per class.
+
+## Our results
+![Accuracy per class](./results/accuracy_per_class_Ultra96v2_1_thread.png "Accuracy per class")
+![Confusion matrix](./results/confusion_matrix_Ultra96v2_1_thread.png "Confusion matrix")
+![F1-score per class](./results/f1_score_per_class_Ultra96v2_1_thread.png"F1-score per class")
