@@ -2,7 +2,7 @@
 
 This project resulted from an internship and the collaboration between ENSEEIHT and the University San Francisco de Quito.
 
-Our main objective was to implement AI on FPGA to study the biodiversity. This objective got refined to "deploy a fully autonomous embbeded system in the jungle to classify 12 orders of insects."
+Our main objective was to implement AI on FPGA to study the biodiversity. This objective got refined to "deploy a fully autonomous embedded system in the jungle to classify 12 orders of insects."
 
 ## 1. Technology used
 
