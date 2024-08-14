@@ -19,16 +19,13 @@ def count_images_per_class(data_dir):
 data_dir = '/home/anthony/Anthony/Recup-dataset/Tipu-12'  # Remplacez par le chemin de votre dataset
 class_counts = count_images_per_class(data_dir)
 
-# Convertir en DataFrame pour une manipulation et une visualisation faciles
 df = pd.DataFrame(class_counts).T
 df['total'] = df.sum(axis=1)
 df = df.reset_index().rename(columns={'index': 'class'})
 print(df)
 
-# Configurer le style de Seaborn
 sns.set(style="whitegrid")
 
-# Visualiser les données
 plt.figure(figsize=(15, 10))
 sns.barplot(x='class', y='total', data=df)
 plt.title('Nombre total d\'images par classe')

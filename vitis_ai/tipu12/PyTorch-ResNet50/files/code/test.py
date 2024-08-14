@@ -69,10 +69,10 @@ def main():
     print("\nimage size is ", IMG_W, "cols x ", IMG_H, " rows\n" )
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch ResNet50')
-    parser.add_argument('--batch-size', type=int, default=32, metavar='N',  # Réduisez la taille du lot ici
+    parser.add_argument('--batch-size', type=int, default=32, metavar='N',
                         help='input batch size for training (default: 64)')
     parser.add_argument('--backbone', type=str, default='resnet50', help='backbone from resnet18,resnet34,resnet50')
-    parser.add_argument('--test-batch-size', type=int, default=32, metavar='N',  # Réduisez la taille du lot ici
+    parser.add_argument('--test-batch-size', type=int, default=32, metavar='N',
                         help='input batch size for testing (default: 1000)')
     parser.add_argument('--seed', type=int, default=1, metavar='S',
                         help='random seed (default: 1)')
@@ -83,7 +83,7 @@ def main():
     # ------quantize---------
     parser.add_argument("--quant_dir", default='./build/quantized')
     parser.add_argument("--quant_mode", default="float", type=str)
-    parser.add_argument("--device", default="cpu", type=str)  # Changer le périphérique par défaut en CPU
+    parser.add_argument("--device", default="cpu", type=str) 
     parser.add_argument("--deploy", action='store_true')
     parser.add_argument('--class_mapping', type=str, default='./build/data/Tipu-12/class_to_order.txt', help='Path to class mapping file')
     args = parser.parse_args()

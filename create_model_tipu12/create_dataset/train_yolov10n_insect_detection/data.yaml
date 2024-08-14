@@ -1,5 +1,5 @@
 train: /home/anthony/Anthony/Recup-dataset/Yolov8_Insect_Detection/dataset_split/train/images
 val: /home/anthony/Anthony/Recup-dataset/Yolov8_Insect_Detection/dataset_split/val/images
 
-nc: 7  # Nombre de classes
-names: ['Araneae', 'Coleoptera', 'Diptera', 'Hemiptera', 'Hymenoptera', 'Lepidoptera', 'Odonata']  # Noms des classes
+nc: 7  # Number of classes
+names: ['Araneae', 'Coleoptera', 'Diptera', 'Hemiptera', 'Hymenoptera', 'Lepidoptera', 'Odonata']  # Name of classes

@@ -22,10 +22,10 @@ for filename in os.listdir(input_folder):
         os.makedirs(download_folder)
         input_file_path = os.path.join(input_folder, filename)
 
-        # Lire le fichier CSV
+        # Read csv
         df = pd.read_csv(input_file_path)
 
-        # Télécharger toutes les photos à partir du CSV
+        # download all photos from csv
         for index, row in df.iterrows():
             photo_id = row['photo_id']
             extension = row['extension']
