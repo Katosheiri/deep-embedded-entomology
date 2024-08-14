@@ -39,7 +39,7 @@ docker pull xilinx/vitis-ai-pytorch-cpu:latest
 ```
 Rather than ```latest```, you can specify the version you want. Name of versions are available [here](https://xilinx.github.io/Vitis-AI/3.5/html/docs/reference/docker_image_versions.html).
 
-Note that this process cann be a bit long.
+Note that this process can be a bit long.
 
 ## Use Vitis AI
 
@@ -52,7 +52,7 @@ Vitis AI has a lot of tools available but we will only use ```Quantizer``` and `
 ./docker_run.sh xilinx/vitis-ai-pytorch-cpu:latest
 ```
 
-if you get the error ```docker: unknown server os```, launch the previous command in sudo :
+If you get the error ```docker: unknown server os```, launch the previous command in sudo :
 ```
 sudo ./docker_run.sh xilinx/vitis-ai-pytorch-cpu:latest
 ```
