@@ -6,7 +6,7 @@ Our main objective was to implement AI on FPGA to study the biodiversity. This o
 
 ## 1. Technology used
 
-To achieve our goal of deploying a fully autonomous embedded system for insect classification in the jungle, we utilized a diverse set of technologies and tools across hardware, software, and development platforms.
+To achieve our goal, we utilized a diverse set of technologies and tools across hardware, software, and development platforms.
 
 ### Hardware
 
