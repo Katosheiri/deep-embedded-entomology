@@ -26,7 +26,7 @@ cd Kria-PYNQ/
 sudo bash install.sh -b KV260
 ```
 
-This process can be long. This perfectly normal. Once installed, you will be able to run Jupyter Lab on your browser. 
+This process can be long. This is perfectly normal. Once installed, you will be able to run Jupyter Lab on your browser. 
 
 ### 3. Run Jupyter Lab
 
@@ -69,4 +69,4 @@ The code was developped to work in multithreading. It will show and save a few m
 ## Our results
 ![Accuracy per class](./results/accuracy_per_class_Ultra96v2_1_thread.png "Accuracy per class")
 ![Confusion matrix](./results/confusion_matrix_Ultra96v2_1_thread.png "Confusion matrix")
-![F1-score per class](./results/f1_score_per_class_Ultra96v2_1_thread.png"F1-score per class")
+![F1-score per class](./results/f1_score_per_class_Ultra96v2_1_thread.png" "F1-score per class")
