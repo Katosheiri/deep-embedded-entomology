@@ -9,13 +9,29 @@ The first step is to setup the SD Card Image. This image can be found [here](htt
 
 Flash your SD card with this image using Balena Etcher.
 
-Insert the card to the board and boot it.
+Insert the card in the board and boot it.
 
 ### 2. Debug USB ethernet connection
 
+The flow to connect to the board is detailed [here](https://ultra96-pynq.readthedocs.io/en/latest/getting_started.html). You can connect via wifi or USB. This section details what to do to connect via USB.
 
+Note that the board might not have an IP adress. To verify it :
+```
+ifconfig
+```
 
-### 2. Install Pynq-DPU
+if the inet IP adress doesn't show or is different than ```192.168.3.2```, use this command :
+```
+sudo ifconfig board_name_in_ifconfig 192.168.3.2 netmask 255.255.255.0 up
+```
+
+You will then be set up to connect to the board via ssh :
+```
+ssh xilinx@192.168.3.1
+password xilinx
+```
+
+### 3. Install Pynq-DPU
 
 Connect in ssh to the board. 
 ```
@@ -31,7 +47,7 @@ pip3 install pynq-dpu --no-build-isolation
 ```
 
 
-### 3. Run Jupyter Lab
+### 4. Run Jupyter Lab
 
 Every time you connect in ssh, you'll need to re-do the previous steps to run Jupyter Lab
 ```
@@ -45,10 +61,11 @@ jupyter lab --ip=0.0.0.0 --no-browser --allow-root
 Go to [http://192.168.3.1:9090/lab]
 
 NB: If this doesn't work, try 8888 port
+
 NB2: If this doesn't work, reboot the board to take modifications into account.
 
 
-### 4. Copy hardware
+### 5. Copy hardware
 
 Copy ```dpu.bit```, ```dpu.hwh``` and ```dpu.xclbin``` on the board. Don't rename these files and leave them in the same folder. If not, your board won't work.
 
@@ -57,7 +74,7 @@ Also copy your ```xmodel``` to use your AI application.
 
 ## Test inference on the board
 
-```test_multithreading.ipynb``` is a notebook containing the whole flow to test our model Tipu12 on the Kria KV260 Vision AI Starter Kit :
+```test_multithreading.ipynb``` is a notebook containing the whole flow to test our model Tipu12 on the Ultra96v2 :
 - Prepare the overlay
 - Load xmodel
 - Preprocessing

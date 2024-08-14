@@ -62,6 +62,6 @@ def main(argv):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("usage : python3 resnet50.py <resnet50_xmodel_file>")
+        print("usage : python3 main.py <resnet50_xmodel_file>")
     else:
         main(sys.argv)
