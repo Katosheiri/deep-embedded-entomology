@@ -11,7 +11,7 @@ The first step is to setup the SD Card Image : the process is detailed [here](ht
 
 Then, install Pynq. To do so connect in ssh to the board. 
 ```
-ssh xilinx@board_ip
+ssh ubuntu@board_ip
 ```
 
 To find the board ip
