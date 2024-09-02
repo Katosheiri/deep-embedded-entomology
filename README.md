@@ -52,5 +52,10 @@ We compared the use of high-level and low-level programming to find the best sol
 
 ```vitis_ai``` details how to install and use Vitis AI.
 
-
 ## 3. Main results
+
+When trained on GPU, our model accuracy is 79.79%. Here are the main results on FPGA using Vitis AI :
+
+![FPS per W during inference](fps_per_w_inference.png "FPS per W during inference")
+
+![FPS per W](fps_per_w.png "FPS per W")
