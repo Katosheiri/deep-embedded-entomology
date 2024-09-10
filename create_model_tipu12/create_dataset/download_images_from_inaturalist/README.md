@@ -4,45 +4,51 @@ We downloaded our images from [iNaturalist](https://www.inaturalist.org/) which 
 
 We needed a lot of specific images to train our model. Here is the flow to follow to efficiently download thousands of images with filters.
 
+This work was in collaboration with Edgar Remy from ENSEEIHT.
+
 ## Get the data
 
 Install the AWS client
+
 ```
 pip3 install --upgrade awscli
 ```
 
 Download the photos
+
 ```
 aws s3 cp --no-sign-request s3://inaturalist-open-data/photos.csv.gz photos.csv.gz
 ```
 
 Download the observations
+
 ```
 aws s3 cp --no-sign-request s3://inaturalist-open-data/observations.csv.gz observations.csv.gz
 ```
 
 Download the taxa
+
 ```
 aws s3 cp --no-sign-request s3://inaturalist-open-data/taxa.csv.gz taxa.csv.gz
 ```
 
-If you want to only keep observations that have been research graded, use ```keep_only_research.py```. This will ensure that the label of the image is correct.
+If you want to only keep observations that have been research graded, use `keep_only_research.py`. This will ensure that the label of the image is correct.
 
 More information on this procedure can be found [here](https://github.com/inaturalist/inaturalist-open-data/tree/documentation).
-
-
 
 ## Create database
 
 Since there are million of observation on iNaturalist, we need to create a database to query the previously downloaded csv. In our case, we used SQLite.
 
 Install SQLite and create new database
+
 ```
 sudo apt-get install sqlite3
 sqlite3 inat.db
 ```
 
 Create tables
+
 ```SQL
 CREATE TABLE observations (
     observation_uuid uuid NOT NULL,
@@ -84,27 +90,34 @@ CREATE TABLE observers (
 ```
 
 Verify that everything works
+
 ```SQL
 .tables
 .schema table_name
 ```
 
 Set up a CSV import with columns separated by tabs.
+
 ```SQL
 .mode tabs
 .import taxa.csv taxa
 ```
 
 Verify that everything works
+
 ```SQL
 select * from taxa limit 10;
 ```
+
 Import other tables
+
 ```SQL
 .import observations_research_only.csv observations
 .import photos.csv photos
 ```
+
 Create indexes to speed up queries
+
 ```SQL
 CREATE UNIQUE INDEX "idx_observations_observation_uuid" ON "observations" ("observation_uuid");
 CREATE INDEX "idx_observations_observer_id" ON "observations" ("observer_id");
@@ -128,23 +141,23 @@ CREATE INDEX "idx_taxa_ancestry" ON "taxa" ("ancestry");
 ```
 
 Verify that everything has been correctly setup
+
 ```SQL
 .indices
 ```
 
-
-
-
 ## Queries
 
-To download a photo, you need ```photo_id``` and ```extension```. Then, go to this url : https://inaturalist-open-data.s3.amazonaws.com/photos/[photo_id]/medium.[extension]
+To download a photo, you need `photo_id` and `extension`. Then, go to this url : https://inaturalist-open-data.s3.amazonaws.com/photos/[photo_id]/medium.[extension]
 
-First, let's get the ```taxon_id``` from the orders that we want.
+First, let's get the `taxon_id` from the orders that we want.
+
 ```SQL
 select taxon_id from Taxa where name='order_name';
 ```
 
 Once we have those, we can query all the information we need. In our case, we added a filter to only get observations that occured in Latin America.
+
 ```SQL
 .headers on
 .mode csv
@@ -163,7 +176,8 @@ AND o.longitude BETWEEN -90 AND -37;
 .output stdout
 ```
 
-This query creates a csv file containing all the information. In our case, these were the ```taxon_id``` we were interested in :
+This query creates a csv file containing all the information. In our case, these were the `taxon_id` we were interested in :
+
 - 47822 : Diptera
 - 47157 : Lepidoptera
 - 47208 : Coleoptera
@@ -177,22 +191,16 @@ This query creates a csv file containing all the information. In our case, these
 - 47792 : Odonata
 - 47864 : Megaloptera
 
-
-
 ## Create a raw dataset
 
-First, we need to filter the csv files. Since we only need a small fraction of the available images, we won't lose time downloading everything. ```filter_csv.py``` creates a folder containing csv files with ~ 1500 images per order.
+First, we need to filter the csv files. Since we only need a small fraction of the available images, we won't lose time downloading everything. `filter_csv.py` creates a folder containing csv files with ~ 1500 images per order.
 
+Then, we can download the images. `download_photos.py` will download all the images referenced in the filtered csv files and organize those in folders named after the order's name.
 
-Then, we can download the images. ```download_photos.py``` will download all the images referenced in the filtered csv files and organize those in folders named after the order's name.
-
-
-Last thing to do, split the downloaded images between train, val and test folders : ```split_dataset.py```
-
-
+Last thing to do, split the downloaded images between train, val and test folders : `split_dataset.py`
 
 ## Visualize the data
 
-```visualize_dataset.py``` shows you the number of images per class, per folder.
+`visualize_dataset.py` shows you the number of images per class, per folder.
 
-```visualize_data.py``` creates a map pointing to the location where all the observations occured.
+`visualize_data.py` creates a map pointing to the location where all the observations occured.
